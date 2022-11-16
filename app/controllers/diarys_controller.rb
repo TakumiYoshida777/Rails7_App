@@ -6,7 +6,12 @@ class DiarysController < ApplicationController
 
   #新規登録機能
   def new
-    
+    @diary = Diary.new
+  end
+
+  #日記登録機能
+  def create
+  
   end
 
   #振り返り機能

@@ -1,1 +1,13 @@
-<h1>明日日記</h1>
+<h1>日記</h1>
+<%= form_with model: @Diary do |form| %>
+    <%= form.label :明日日記 %>
+    <%= form.text_area :content %>
+    <%= form.submit :登録%>
+
+    <%= form.label :本日日記 %>
+    <%= form.text_area :content %>
+    <%= form.submit :登録%>
+<% end %>
+
+
+
